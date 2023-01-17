@@ -170,7 +170,9 @@ section {
 /* main */
 .sticky-elem {
   position: sticky;
+  width: 100%;
   top: 0;
+  height: 100%;
   margin: 0 auto;
 }
 .main-image {
@@ -180,8 +182,7 @@ section {
 }
 
 .image-item {
-  height: 100%;
-  margin: auto;
+  /* margin: auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,7 +207,9 @@ section {
 }
 .image-item img {
   max-width: 100%;
-  height: auto;
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
 }
 .main-text {
   position: relative;
@@ -228,4 +231,9 @@ section {
 }
 .none {
   opacity: 0;
+}
+/* footer */
+.footer {
+  height: 1000px;
+  background-color: #fff;
 }
