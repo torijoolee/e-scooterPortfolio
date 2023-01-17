@@ -6,13 +6,21 @@
 * {
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+}
 html {
   height: 100%;
   font-family: "Archivo", sans-serif;
 }
 body {
   min-height: 100vh;
+  background-color: #496266;
 }
+.global-width {
+  max-width: 1400px;
+}
+
 /* navber */
 .navbar {
   width: 100vw;
@@ -21,7 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 2rem 0;
   position: absolute;
 }
 .logo a {
@@ -42,7 +50,7 @@ body {
   justify-content: space-between;
 }
 .header-left {
-  padding: 10em 10em;
+  padding: 10em 0;
 }
 .header-left h1 {
   font-size: 3rem;
@@ -71,6 +79,49 @@ body {
 .header-right img {
   position: absolute;
   bottom: 0;
-  right: 5em;
-  width: 40%;
+  right: 0;
+
+  width: 35vw;
+}
+.lca {
+  height: 100vh;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.lac-top {
+  text-align: center;
+}
+.lac-bottom {
+  display: flex;
+}
+.ica-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ica-item img {
+  width: 90%;
+  margin-bottom: 10%;
+}
+/* main */
+.main-image {
+  height: 100vh;
+  width: 100%;
+}
+.image-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-item h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+.image-item img {
+  width: 70%;
 }
