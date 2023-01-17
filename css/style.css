@@ -175,9 +175,10 @@ section {
 }
 .main-image {
   height: 100vh;
-  width: 60%;
+  width: 65%;
   padding: 0 5em;
 }
+
 .image-item {
   height: 100%;
   margin: auto;
@@ -191,7 +192,7 @@ section {
   right: 0;
   bottom: 0;
   opacity: 0;
-  transition: 1.5s;
+  transition: 0.5s;
 }
 .visible {
   opacity: 1;
@@ -224,4 +225,7 @@ section {
   border-radius: 0.5em;
   line-height: 140%;
   box-shadow: 1px 1px 3px var(--color-black);
+}
+.none {
+  opacity: 0;
 }

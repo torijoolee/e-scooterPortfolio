@@ -1,20 +1,27 @@
 (() => {
   const imageItems = document.querySelectorAll(".image-item");
   const textElems = document.querySelectorAll(".text");
-  const currnetItem = textElems[0];
+  let currentItem = textElems[0];
 
   for (let i = 0; i < textElems.length; i++) {
-    textElems[i].dataset.index = i;
     imageItems[i].dataset.index = i;
+    textElems[i].dataset.index = i;
   }
-
   function handleScroll() {
-    for (i = 0; i < textElems.length; i++) {
-      let text = textElems[i].dataset.index;
-      let textImage = imageItems[i].dataset.index;
+    let text;
+    let boundingRect;
 
-      if (text == textImage) {
-        imageItems[i].classList.add("visible");
+    for (i = 0; i < textElems.length; i++) {
+      text = textElems[i];
+      boundingRect = text.getBoundingClientRect().top;
+
+      if (
+        boundingRect > window.innerHeight * 0.1 &&
+        boundingRect < window.innerHeight * 0.9
+      ) {
+        currentItem.classList.remove("visible");
+        currentItem = imageItems[text.dataset.index];
+        currentItem.classList.add("visible");
       }
     }
   }
