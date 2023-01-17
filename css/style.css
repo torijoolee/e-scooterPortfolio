@@ -1,3 +1,11 @@
+:root {
+  /* color */
+  --color-black: #3c413b;
+  --color-white: #f4f6f3;
+}
+* {
+  box-sizing: border-box;
+}
 html {
   height: 100%;
   font-family: "Archivo", sans-serif;
@@ -7,12 +15,14 @@ body {
 }
 /* navber */
 .navbar {
-  width: 100%;
+  width: 100vw;
   height: 20px;
   background-color: #f4f6f3;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  align-items: center;
+  padding: 2rem 4rem;
+  position: absolute;
 }
 .logo a {
   text-decoration: none;
@@ -22,4 +32,45 @@ body {
 }
 .nav-item {
   margin-left: 3rem;
+}
+/* header */
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-color: #dce2d8;
+  display: flex;
+  justify-content: space-between;
+}
+.header-left {
+  padding: 10em 10em;
+}
+.header-left h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  color: var(--color-black);
+  line-height: 120%;
+  font-weight: 600;
+}
+.header-left p {
+  line-height: 130%;
+  font-size: 1rem;
+  color: var(--color-black);
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+.header-left button {
+  border-style: none;
+  font-size: medium;
+  padding: 1em 0.5em;
+  background-color: #51af65;
+  border-radius: 25px;
+  width: 12%;
+  position: absolute;
+  color: var(--color-white);
+}
+.header-right img {
+  position: absolute;
+  bottom: 0;
+  right: 5em;
+  width: 40%;
 }
