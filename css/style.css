@@ -15,6 +15,9 @@
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 
 html {
   height: 100%;
@@ -59,12 +62,19 @@ section {
   color: var(--color-green);
   font-weight: bold;
 }
+
 .nav-menu {
   display: flex;
 }
 .nav-item {
   padding-left: 3rem;
   color: var(--color-black);
+  opacity: 0.8;
+  flex-wrap: nowrap;
+}
+.nav-item:hover {
+  opacity: 1;
+  color: black;
 }
 /* header */
 .header {
@@ -101,7 +111,7 @@ section {
   padding: 1em 0.5em;
   background-color: #51af65;
   border-radius: 25px;
-  width: 12%;
+  min-width: 12%;
   position: absolute;
   color: #dce2d8;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -181,6 +191,7 @@ section {
   right: 0;
   bottom: 0;
   opacity: 0;
+  transition: 1.5s;
 }
 .visible {
   opacity: 1;
@@ -200,7 +211,7 @@ section {
   position: relative;
   width: 100%;
   margin: auto;
-  max-width: 30%;
+  max-width: 30vw;
   text-align: center;
 }
 .text {
@@ -212,4 +223,5 @@ section {
   margin-bottom: 1em;
   border-radius: 0.5em;
   line-height: 140%;
+  box-shadow: 1px 1px 3px var(--color-black);
 }
