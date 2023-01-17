@@ -2,6 +2,15 @@
   /* color */
   --color-black: #3c413b;
   --color-white: #f4f6f3;
+  --color-green: #58ba7b;
+  --color-sub-title: #95afaa;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 * {
   box-sizing: border-box;
@@ -9,34 +18,53 @@
 
 html {
   height: 100%;
-  font-family: "Archivo", sans-serif;
+  width: 100%;
 }
 body {
-  min-height: 100vh;
+  width: 100%;
+  background-color: #496266;
+  overflow-x: hidden;
 }
-.global-width {
-  max-width: 1400px;
+p {
+  font-family: "Pretendard-Regular";
+}
+h1,
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+section {
+  width: 100%;
 }
 
 /* navber */
 .navbar {
-  width: 100vw;
+  width: 100%;
   height: 20px;
-  background-color: #f4f6f3;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
   position: absolute;
+  padding: 2em 6em;
+  top: 0;
+  left: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.85rem;
+  opacity: 0.8;
 }
 .logo a {
   text-decoration: none;
+  color: var(--color-green);
+  font-weight: bold;
 }
 .nav-menu {
   display: flex;
 }
 .nav-item {
-  margin-left: 3rem;
+  padding-left: 3rem;
+  color: var(--color-black);
 }
 /* header */
 .header {
@@ -45,23 +73,27 @@ body {
   background-color: #dce2d8;
   display: flex;
   justify-content: space-between;
+  padding: 0 5em;
 }
 .header-left {
   padding: 10em 0;
 }
 .header-left h1 {
   font-size: 3rem;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
   color: var(--color-black);
   line-height: 120%;
-  font-weight: 600;
 }
 .header-left p {
   line-height: 130%;
   font-size: 1rem;
   color: var(--color-black);
   font-weight: 400;
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
+  margin-left: 0.1em;
+  opacity: 0.6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .header-left button {
   border-style: none;
@@ -71,33 +103,55 @@ body {
   border-radius: 25px;
   width: 12%;
   position: absolute;
-  color: var(--color-white);
+  color: #dce2d8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .header-right img {
   position: absolute;
   bottom: 0;
-  right: 0;
-
-  width: 35vw;
+  right: 5rem;
+  width: 40vw;
 }
 .lca {
+  width: 100%;
   height: 100vh;
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--color-black);
+  padding: 0 5em;
 }
 .lac-top {
   text-align: center;
 }
+.lac-top h2,
+.lac-top span {
+  color: var(--color-green);
+  font-weight: bold;
+}
+
+.lac-top h2 {
+  margin-bottom: 1em;
+}
+.lac-top p {
+  line-height: 150%;
+  margin-top: 0.5em;
+}
 .lac-bottom {
   display: flex;
+  margin-bottom: 4rem;
 }
 .ica-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.ica-item span {
+  font-weight: bolder;
+  color: #617c80;
 }
 .ica-item img {
   width: 90%;
@@ -106,17 +160,13 @@ body {
 /* main */
 .sticky-elem {
   position: sticky;
-  width: 100%;
   top: 0;
   margin: 0 auto;
 }
 .main-image {
   height: 100vh;
-  width: 100vw;
-  background-color: #496266;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 60%;
+  padding: 0 5em;
 }
 .image-item {
   height: 100%;
@@ -125,17 +175,22 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  display: flex;
-  max-width: 65%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
 }
 .image-item h2 {
-  font-size: 2.5rem;
   margin-bottom: 0.5em;
+  color: var(--color-sub-title);
+}
+.image-item .main-title {
+  color: var(--color-white);
 }
 .image-item img {
   max-width: 100%;
