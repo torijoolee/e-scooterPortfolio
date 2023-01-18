@@ -1,0 +1,32 @@
+/* graph */
+.legend {
+  width: 100%;
+  color: gainsboro;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  font-size: 1rem;
+}
+.legend li {
+  padding-bottom: 0.2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.legend li::before {
+  margin-right: 0.2em;
+  font-size: 1.5rem;
+  content: "●";
+}
+.legend li:first-child:before {
+  color: #eff07e;
+}
+.legend li:nth-child(2)::before {
+  color: #53bc8e;
+}
+.legend li:nth-child(3)::before {
+  color: #339798;
+}
+.legend li:last-child::before {
+  color: #204f6e;
+}

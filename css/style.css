@@ -162,14 +162,21 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 1s;
 }
+.ica-item:hover {
+  transform: scale(1.05);
+}
+
 .ica-item span {
   font-weight: bolder;
   color: #617c80;
 }
 .ica-item img {
-  width: 90%;
+  width: 88%;
   margin-bottom: 10%;
+  transition: 1s;
+  border-radius: 50%;
 }
 
 /* sticky */
@@ -199,38 +206,7 @@ section.scroll-content {
   margin: 0 auto;
   margin-top: 3%;
 }
-/* graph */
-.legend {
-  width: 100%;
-  color: gainsboro;
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  font-size: 1rem;
-}
-.legend li {
-  padding-bottom: 0.2em;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-}
-.legend li::before {
-  margin-right: 0.2em;
-  font-size: 1.5rem;
-  content: "●";
-}
-.legend li:first-child:before {
-  color: #eff07e;
-}
-.legend li:nth-child(2)::before {
-  color: #53bc8e;
-}
-.legend li:nth-child(3)::before {
-  color: #339798;
-}
-.legend li:last-child::before {
-  color: #204f6e;
-}
+
 .visible {
   opacity: 1;
 }
