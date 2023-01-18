@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- font -->
+    <!-- chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
   </head>
   <body>
     <!-- navbar -->
@@ -114,6 +115,20 @@
             <h2 class="main-title">Use</h2>
             <img src="img/12_dark.png" alt="" />
           </div>
+          <!-- 차트삽입 -->
+          <div class="image-item chart">
+            <h2 class="main-title">Use</h2>
+            <div class="chart-container">
+              <ul class="legend">
+                <li>working, biking</li>
+                <li>car rides</li>
+                <li>public transport</li>
+                <li>ect</li>
+              </ul>
+              <canvas id="myChart" height="30vh" width="30vw"></canvas>
+            </div>
+            <img src="img/12_dark.png" alt="" />
+          </div>
           <div class="image-item">
             <h2>Social</h2>
             <img src="img/14.png" alt="" />
@@ -181,7 +196,7 @@
         </div>
         <div class="text">
           <p>
-            조사에 따르면 대부분의 사람들은 전기 스쿠터를<br />
+            그러나 조사에 따르면 대부분의 사람들은 전기 스쿠터를<br />
             걷거나 자전거타기, 대중교통을 대신해 사용하며<br />
             자동차의 3분의 1만을 대처한다고 한다
           </p>
@@ -189,6 +204,7 @@
         <div class="text none">
           <p></p>
         </div>
+
         <div class="text">
           <p>
             또한 가장 핵심적인 서비스인 도킹 없이 <br />스쿠터 픽업, 드롭이
@@ -240,6 +256,7 @@
     </section>
     <section class="normal"></section>
 
+    <script src="js/chart.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

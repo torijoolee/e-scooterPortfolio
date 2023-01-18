@@ -29,7 +29,6 @@
         boundingRect < window.innerHeight * 0.9
       ) {
         inactivate();
-
         currentItem = imageItems[text.dataset.index];
         activate();
       }
