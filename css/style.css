@@ -178,7 +178,7 @@ img {
 
 /* sticky */
 section.scroll-content {
-  background-color: #496266;
+  background: #496266;
 }
 .scroll-images {
   position: sticky;
@@ -196,12 +196,6 @@ section.scroll-content {
   height: 100vh;
   opacity: 0;
   transition: 0.5s;
-}
-.chart-container {
-  width: 32%;
-  position: absolute;
-  margin: 0 auto;
-  margin-top: 3%;
 }
 
 .visible {
@@ -247,9 +241,21 @@ section.scroll-content {
 .none {
   opacity: 0;
 }
-/* normal */
-.normal {
-  height: 100vh;
-  width: 100vw;
+.footer {
   background-color: #496266;
+  padding-top: 5rem;
+}
+.group {
+  width: 100%;
+  color: var(--color-black);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+
+  background-color: var(--color-sub-title);
+  text-align: center;
+  padding: 2.5em;
+  opacity: 0.5;
+}
+.group p {
+  margin-bottom: 0.3em;
 }

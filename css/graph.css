@@ -1,4 +1,10 @@
 /* graph */
+.chart-container {
+  width: 32%;
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 3.5%;
+}
 .legend {
   width: 100%;
   color: gainsboro;
