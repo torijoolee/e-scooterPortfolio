@@ -25,7 +25,6 @@ html {
 }
 body {
   width: 100%;
-
   overflow-x: hidden;
 }
 p {
@@ -35,7 +34,7 @@ h1,
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 section {
   width: 100%;
@@ -115,7 +114,7 @@ img {
   padding: 1em 0.5em;
   background-color: #51af65;
   border-radius: 25px;
-  min-width: 12%;
+  min-width: 10em;
   position: absolute;
   color: #dce2d8;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -123,8 +122,9 @@ img {
 .header-right img {
   position: absolute;
   bottom: 0;
-  right: 5rem;
-  width: 40vw;
+  right: 3em;
+  padding: 0 2rem;
+  max-width: 80vh;
 }
 .lca {
   width: 100%;

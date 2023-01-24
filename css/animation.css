@@ -20,9 +20,11 @@
 
 @keyframes circleAni {
   from {
-    scale: 1;
+    transform-origin: center center;
+    transform: translate(0px, 0px);
   }
   to {
-    scale: 1.08;
+    transform-origin: center center;
+    transform: translate(0px, 20px);
   }
 }
