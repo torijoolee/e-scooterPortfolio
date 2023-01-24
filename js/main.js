@@ -3,6 +3,8 @@
   const textElems = document.querySelectorAll(".text");
   let currentItem = imageItems[0];
 
+  const btnElem = document.querySelector(".btn");
+
   for (let i = 0; i < textElems.length; i++) {
     textElems[i].dataset.index = i;
     imageItems[i].dataset.index = i;
