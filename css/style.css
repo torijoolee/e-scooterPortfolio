@@ -19,10 +19,6 @@ a {
   text-decoration: none;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-}
 body {
   width: 100%;
   overflow-x: hidden;
@@ -183,6 +179,9 @@ section.scroll-content {
 .scroll-images {
   position: sticky;
   top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   height: 100vh;
 }
 .image-item {
@@ -243,14 +242,12 @@ section.scroll-content {
 }
 .footer {
   background-color: #496266;
-  padding-top: 5rem;
 }
 .group {
   width: 100%;
   color: var(--color-black);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8rem;
-
   background-color: var(--color-sub-title);
   text-align: center;
   padding: 2.5em;

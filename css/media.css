@@ -1,13 +1,18 @@
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  * {
+    box-sizing: border-box;
+  }
   .header-right img {
+    padding: 0 1rem;
+    max-width: 60vh;
   }
   .lca {
-    height: 100vh;
+    height: 50vh;
+    padding-top: 2em;
   }
   .image-item img {
-    max-width: 30%;
+    max-width: 90%;
     right: 0;
-    padding: 0 0rem;
   }
   .text p {
     width: 50vw;
@@ -20,5 +25,9 @@
     /* position: absolute;
     margin: 0 auto; */
     margin-top: 8%;
+  }
+  .image-item {
+    width: 100vw;
+    height: 100vh;
   }
 }
