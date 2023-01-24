@@ -1,7 +1,4 @@
 @media (max-width: 1200px) {
-  * {
-    box-sizing: border-box;
-  }
   .header-right img {
     padding: 0 1rem;
     max-width: 60vh;
@@ -36,5 +33,53 @@
   .image-item {
     width: 100vw;
     height: 100vh;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    padding: 1rem;
+  }
+  .header-left h1 {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    padding: 2rem 1rem;
+  }
+
+  .header-right img {
+    right: 0;
+    max-width: 45vh;
+  }
+  .lca {
+    padding: 1rem;
+    height: fit-content;
+  }
+  .lac-top p {
+    width: 80%;
+    margin: 0.5em auto;
+  }
+  .lac-bottom {
+    margin-top: 1rem;
+  }
+  .lac-top h2 {
+    margin-top: 2rem;
+  }
+  .ica-item {
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .ica-item img {
+    margin-bottom: 1rem;
+  }
+  .lac-bottom {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .text p {
+    width: 90vw;
   }
 }
