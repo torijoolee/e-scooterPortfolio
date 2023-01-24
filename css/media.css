@@ -15,8 +15,8 @@
     padding-top: 2em;
   }
   .image-item img {
-    max-width: 90%;
-    right: 0;
+    max-width: 100%;
+    margin-top: 0.5rem;
   }
   .text p {
     width: 50vw;
@@ -35,7 +35,7 @@
     height: 100vh;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .header {
     padding: 1rem;
   }
@@ -77,7 +77,7 @@
     flex-direction: column;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .text p {
     width: 90vw;
