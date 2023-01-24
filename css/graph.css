@@ -4,6 +4,7 @@
   position: absolute;
   margin: 0 auto;
   margin-top: 3.5%;
+  overflow: hidden;
 }
 .legend {
   width: 100%;

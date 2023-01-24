@@ -6,6 +6,13 @@
     padding: 0 1rem;
     max-width: 60vh;
   }
+  #LCA {
+    height: 100vh;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+  }
   .lca {
     height: 50vh;
     padding-top: 2em;
