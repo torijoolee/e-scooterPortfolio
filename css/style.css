@@ -283,3 +283,6 @@ section.scroll-content {
 .scrollTop.visible {
   opacity: 1;
 }
+.mobile {
+  display: none;
+}

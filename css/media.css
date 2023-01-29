@@ -58,6 +58,9 @@
   .navbar {
     padding: 2rem 1rem;
   }
+  .nav-item {
+    padding-left: 1rem;
+  }
 
   .header-right img {
     right: 0;
@@ -102,6 +105,15 @@
   .group p {
     margin-bottom: 0.5em;
   }
+  .scrollTop {
+    width: 60px;
+    height: 60px;
+    bottom: 5%;
+    right: 8%;
+  }
+  .scrollTop i {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 480px) {
   p {
@@ -110,22 +122,11 @@
   /* .scrollTop {
     display: none;
   } */
-  .nav-item {
-    padding-left: 1rem;
-  }
+
   .desktop {
     display: none;
   }
   .mobile {
     display: block;
-  }
-  .scrollTop {
-    width: 60px;
-    height: 60px;
-    bottom: 5%;
-    right: 10%;
-  }
-  .scrollTop i {
-    font-size: 2rem;
   }
 }
