@@ -1,10 +1,10 @@
 /* graph */
 .chart-container {
-  width: 32%;
+  width: 35%;
   position: absolute;
   margin: 0 auto;
   margin-top: 3.5%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .legend {
   width: 100%;
@@ -13,6 +13,7 @@
   bottom: 0;
   left: 100%;
   font-size: 1rem;
+  z-index: 100;
 }
 .legend li {
   padding-bottom: 0.2em;
@@ -36,4 +37,12 @@
 }
 .legend li:last-child::before {
   color: #204f6e;
+}
+@media (max-width: 760px) {
+  .legend {
+    display: none;
+  }
+  .legend li::before {
+    display: none;
+  }
 }

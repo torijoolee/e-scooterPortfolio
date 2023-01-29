@@ -63,6 +63,7 @@ img {
   text-decoration: none;
   color: var(--color-green);
   font-weight: bold;
+  line-height: 140%;
 }
 
 .nav-menu {
@@ -271,9 +272,14 @@ section.scroll-content {
   align-items: center;
   position: fixed;
   bottom: 10%;
-  right: 8%;
+  right: 5%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 .scrollTop i {
   font-size: 3rem;
   color: var(--color-white);
+}
+.scrollTop.visible {
+  opacity: 1;
 }

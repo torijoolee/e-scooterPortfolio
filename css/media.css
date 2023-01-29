@@ -11,7 +11,7 @@
     top: 0;
   }
   .lca {
-    height: 50vh;
+    height: 100vh;
     padding-top: 2em;
   }
   .image-item img {
@@ -34,8 +34,20 @@
     width: 100vw;
     height: 100vh;
   }
+  .scrollTop {
+    bottom: 10%;
+    right: 5%;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 960px) {
+  .lca {
+    height: 80vh;
+  }
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
   .header {
     padding: 1rem;
   }
@@ -71,7 +83,7 @@
     margin-bottom: 1rem;
   }
   .ica-item img {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .lac-bottom {
     flex-direction: column;
@@ -81,5 +93,39 @@
   }
   .text p {
     width: 90vw;
+  }
+  .group {
+    font-size: 0.4rem;
+    padding: 3rem 0;
+    line-height: 160%;
+  }
+  .group p {
+    margin-bottom: 0.5em;
+  }
+}
+@media (max-width: 480px) {
+  p {
+    font-size: 15px;
+  }
+  /* .scrollTop {
+    display: none;
+  } */
+  .nav-item {
+    padding-left: 1rem;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .scrollTop {
+    width: 60px;
+    height: 60px;
+    bottom: 5%;
+    right: 10%;
+  }
+  .scrollTop i {
+    font-size: 2rem;
   }
 }
